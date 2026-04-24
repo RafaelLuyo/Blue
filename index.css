@@ -527,7 +527,8 @@ ul {
 .section {
   position: relative;
   padding: 80px 48px;
-  background: #030712
+  background: #030712;
+  overflow: hidden;
 }
 
 .section-inner {
@@ -737,7 +738,8 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  z-index: 1
+  z-index: 1;
+  overflow: hidden
 }
 
 .planet {
@@ -1355,7 +1357,8 @@ ul {
   }
 
   .section {
-    padding: 60px 20px
+    padding: 60px 20px;
+    overflow: hidden;
   }
 
   .section-mission {
@@ -1385,16 +1388,18 @@ ul {
 
   /* Horizontal swipe for app phones on mobile */
   .app-phones {
-    transform: none;
+    transform: none !important;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
     gap: 16px;
-    margin: 0 -20px;
+    margin: 20px -20px 0;
     padding: 0 20px 40px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     width: calc(100% + 40px);
+    -webkit-overflow-scrolling: touch;
   }
 
   .app-phones::-webkit-scrollbar {
@@ -1404,7 +1409,13 @@ ul {
   .phone-mockup {
     scroll-snap-align: center;
     flex-shrink: 0;
-    width: 260px
+    width: 240px;
+    transform: none !important;
+  }
+  
+  .phone-frame {
+    width: 240px;
+    height: 480px;
   }
 
   .phone-left,

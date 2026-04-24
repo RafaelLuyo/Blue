@@ -858,6 +858,42 @@ ul {
   opacity: 0.5
 }
 
+.p-hex-9 {
+  width: 140px;
+  height: 140px;
+  top: 12%;
+  left: 8%;
+  transform: rotate(25deg);
+  opacity: 0.8
+}
+
+.p-hex-10 {
+  width: 170px;
+  height: 170px;
+  top: 35%;
+  left: -20px;
+  transform: rotate(-10deg);
+  opacity: 0.6
+}
+
+.p-hex-11 {
+  width: 150px;
+  height: 150px;
+  top: 6%;
+  right: 10%;
+  transform: rotate(-15deg);
+  opacity: 0.8
+}
+
+.p-hex-12 {
+  width: 200px;
+  height: 200px;
+  top: 5%;
+  left: 40%;
+  transform: rotate(12deg);
+  opacity: 0.6
+}
+
 .planet-shine {
   position: absolute;
   top: 0;
@@ -1409,13 +1445,16 @@ ul {
   .phone-mockup {
     scroll-snap-align: center;
     flex-shrink: 0;
-    width: 240px;
+    width: 260px;
     transform: none !important;
   }
 
-  .phone-frame {
-    width: 240px;
-    height: 480px;
+  .phone-frame,
+  .phone-frame.featured {
+    width: 260px;
+    height: 520px;
+    border-width: 3px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   }
 
   .phone-left,
